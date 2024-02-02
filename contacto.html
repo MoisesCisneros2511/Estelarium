@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estelarium</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="./index.html"
+        class="logo">
+            <h2 class="nombre-empresa">Estlarium</h2>
+        </a>
+        <nav>
+            <a href="./index.html" class="nav-link">Inicio</a>
+            <a href="./galeria.html" class="nav-link">Galeria</a>
+            <a href="./planetas.html" class="nav-link">Planetas</a>
+            <a href="./acerca.html" class="nav-link">Acerca de</a>
+            <a href="./contacto.html" class="nav-link">Contacto</a>
+            </nav>
+    </header>
+
+
+    <main>
+        <section class="contact-section">
+            <h2>Contacto</h2>
+            <form action="procesar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+    
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+        </main>
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
