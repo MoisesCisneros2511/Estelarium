@@ -1,0 +1,58 @@
+// img {
+//     max-width: 100%;
+//     display: block;
+// } codigo para que funcionw
+/* GALERIA v2 */
+main {
+    .galeria-container {
+        margin-top: 20px;
+        padding: 0;
+        max-width: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2rem;
+            .galeria-photo{
+                display: flex;
+                flex-direction: column;
+                .photos {
+                    border-radius: 1rem;
+                    overflow: hidden;
+                    text-decoration: none;
+                    font-weight: 400;
+                    transition: 0,15s;
+                    border: none;
+                    &:hover {
+                        box-shadow: 0 0 0 0.25rem $color-hover;
+                    }
+                }
+                .photo-description {
+                    padding: 1rem;
+                    background-color: $color-galeriaFondo;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    main {
+        .galeria-container {
+            .galeria-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    main {
+        .galeria-container {
+            .galeria-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}
