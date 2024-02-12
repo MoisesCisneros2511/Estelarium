@@ -1,0 +1,6 @@
+// Mixxin
+@mixin container-grid($column, $frs) {
+    display: grid;
+    grid-template-columns: repeat($column,$frs);
+    gap: 2rem;
+}

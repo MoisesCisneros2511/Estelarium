@@ -362,7 +362,7 @@ a.btn {
   }
 }
 /* GALERIA v2 */
-main .galeria-container {
+main .galeria-container, main .planetas-container {
   margin-top: 20px;
   padding: 0;
   max-width: 100%;
@@ -370,16 +370,16 @@ main .galeria-container {
   margin-left: auto;
   margin-right: auto;
 }
-main .galeria-container .galeria-grid {
+main .galeria-container .galeria-grid, main .planetas-container .galeria-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-main .galeria-container .galeria-grid .galeria-photo {
+main .galeria-container .galeria-grid .galeria-photo, main .planetas-container .galeria-grid .galeria-photo {
   display: flex;
   flex-direction: column;
 }
-main .galeria-container .galeria-grid .galeria-photo .photos {
+main .galeria-container .galeria-grid .galeria-photo .photos, main .planetas-container .galeria-grid .galeria-photo .photos {
   border-radius: 1rem;
   overflow: hidden;
   text-decoration: none;
@@ -387,22 +387,89 @@ main .galeria-container .galeria-grid .galeria-photo .photos {
   transition: 0, 15s;
   border: none;
 }
-main .galeria-container .galeria-grid .galeria-photo .photos:hover {
+main .galeria-container .galeria-grid .galeria-photo .photos:hover, main .planetas-container .galeria-grid .galeria-photo .photos:hover {
   box-shadow: 0 0 0 0.25rem #836FFF;
 }
-main .galeria-container .galeria-grid .galeria-photo .photo-description {
+main .galeria-container .galeria-grid .galeria-photo .photo-description, main .planetas-container .galeria-grid .galeria-photo .photo-description {
   padding: 1rem;
   background-color: #474F7A;
 }
 
 @media (max-width: 850px) {
-  main .galeria-container .galeria-grid {
+  main .galeria-container .galeria-grid, main .planetas-container .galeria-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 600px) {
-  main .galeria-container .galeria-grid {
+  main .galeria-container .galeria-grid, main .planetas-container .galeria-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* PLANETAS0 */
+.planetas-container {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1019607843);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.planetas-container .planetas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.planetas-container .planetas-grid .planeta-info {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.planetas-container .planetas-grid .planeta-info:hover {
+  background: rgba(52, 152, 219, 0.3647058824);
+  box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+}
+.planetas-container .planetas-grid .planeta-info h2 {
+  font-size: 25px;
+}
+.planetas-container .planetas-grid .planeta-info .imgBx {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .planeta-info {
+    flex-direction: column;
+  }
+}
+@media (max-width: 680px) {
+  .planetas-container .planetas-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .planetas-container .planetas-grid .planeta-info {
+    flex-direction: column;
   }
 }
 
