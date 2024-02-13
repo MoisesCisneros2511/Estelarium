@@ -362,7 +362,7 @@ a.btn {
   }
 }
 /* GALERIA v2 */
-main .galeria-container, main .planetas-container {
+main .galeria-container, main .acercade-container, main .planetas-container {
   margin-top: 20px;
   padding: 0;
   max-width: 100%;
@@ -370,16 +370,16 @@ main .galeria-container, main .planetas-container {
   margin-left: auto;
   margin-right: auto;
 }
-main .galeria-container .galeria-grid, main .planetas-container .galeria-grid {
+main .galeria-container .galeria-grid, main .acercade-container .galeria-grid, main .planetas-container .galeria-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-main .galeria-container .galeria-grid .galeria-photo, main .planetas-container .galeria-grid .galeria-photo {
+main .galeria-container .galeria-grid .galeria-photo, main .acercade-container .galeria-grid .galeria-photo, main .planetas-container .galeria-grid .galeria-photo {
   display: flex;
   flex-direction: column;
 }
-main .galeria-container .galeria-grid .galeria-photo .photos, main .planetas-container .galeria-grid .galeria-photo .photos {
+main .galeria-container .galeria-grid .galeria-photo .photos, main .acercade-container .galeria-grid .galeria-photo .photos, main .planetas-container .galeria-grid .galeria-photo .photos {
   border-radius: 1rem;
   overflow: hidden;
   text-decoration: none;
@@ -387,21 +387,21 @@ main .galeria-container .galeria-grid .galeria-photo .photos, main .planetas-con
   transition: 0, 15s;
   border: none;
 }
-main .galeria-container .galeria-grid .galeria-photo .photos:hover, main .planetas-container .galeria-grid .galeria-photo .photos:hover {
+main .galeria-container .galeria-grid .galeria-photo .photos:hover, main .acercade-container .galeria-grid .galeria-photo .photos:hover, main .planetas-container .galeria-grid .galeria-photo .photos:hover {
   box-shadow: 0 0 0 0.25rem #836FFF;
 }
-main .galeria-container .galeria-grid .galeria-photo .photo-description, main .planetas-container .galeria-grid .galeria-photo .photo-description {
+main .galeria-container .galeria-grid .galeria-photo .photo-description, main .acercade-container .galeria-grid .galeria-photo .photo-description, main .planetas-container .galeria-grid .galeria-photo .photo-description {
   padding: 1rem;
   background-color: #474F7A;
 }
 
 @media (max-width: 850px) {
-  main .galeria-container .galeria-grid, main .planetas-container .galeria-grid {
+  main .galeria-container .galeria-grid, main .acercade-container .galeria-grid, main .planetas-container .galeria-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 600px) {
-  main .galeria-container .galeria-grid, main .planetas-container .galeria-grid {
+  main .galeria-container .galeria-grid, main .acercade-container .galeria-grid, main .planetas-container .galeria-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -471,6 +471,97 @@ main .galeria-container .galeria-grid .galeria-photo .photo-description, main .p
   .planetas-container .planetas-grid .planeta-info {
     flex-direction: column;
   }
+}
+/* Acerca de */
+.acercade-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.acercade-container .about-section {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.acercade-container .accordion {
+  padding-bottom: 20px;
+}
+.acercade-container .accordion img {
+  border-radius: 25px;
+  padding-bottom: 20px;
+}
+.acercade-container .accordion .accordion-item {
+  background-color: #474F7A;
+  color: aliceblue;
+}
+.acercade-container .accordion .accordion-item .accordion-button {
+  background-color: #071952;
+  color: aliceblue;
+}
+
+@media (max-width: 850px) {
+  .navbar .container-fluid .navbar-toggler {
+    background-color: #474F7A;
+  }
+  .acercade-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}
+.form-container .form {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #836FFF, #15F5BA);
+  display: flex;
+  justify-content: center;
+}
+.form-container .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(33, 25, 81, 0.3);
+  width: 800px;
+  min-height: 400px;
+  border-radius: 18px;
+  border: 1px solid rgb(240, 243, 255);
+}
+.form-container .form form h2 {
+  color: rgb(240, 243, 255);
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 49px;
+}
+.form-container .form form label {
+  color: rgb(240, 243, 255);
+  font-size: 20px;
+  margin: 15px;
+}
+.form-container .form form input {
+  width: 60%;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: rgb(240, 243, 255);
+}
+.form-container .form form textarea {
+  width: 60%;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #211951;
+  color: rgb(240, 243, 255);
+}
+.form-container .form form button {
+  background-color: rgb(131, 111, 255);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 18px;
+  color: rgb(240, 243, 255);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
