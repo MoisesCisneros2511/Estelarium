@@ -1,4 +1,14 @@
 /* Estilos generales */
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 h2, h3, h4 {
   color: #3498db;
   margin: 5px;
@@ -18,16 +28,6 @@ img {
 }
 
 /* Header */
-body {
-  font-family: sans-serif;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
 header {
   display: flex;
   background-color: rgb(3, 6, 55);
@@ -98,7 +98,22 @@ main .banner {
   align-items: center;
   padding: 0;
 }
-
+main .banner .content {
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+}
+main .banner .content .titulo-gr {
+  color: transparent;
+  font-size: 5rem;
+  background: linear-gradient(123deg, #525CEB, #B931FC);
+  background-clip: text;
+  margin: 5px;
+}
+main .banner .content p {
+  color: #fff;
+  font-size: 20px;
+}
 main .banner::before {
   content: "";
   position: absolute;
@@ -108,22 +123,6 @@ main .banner::before {
   height: 200px;
   background: linear-gradient(to top, #1F2544, transparent);
 }
-
-main .banner .content {
-  position: relative;
-  max-width: 900px;
-  text-align: center;
-}
-
-main .banner .content h2 {
-  font-size: 30px;
-}
-
-main .banner .content p {
-  color: #fff;
-  font-size: 20px;
-}
-
 main .banner2 {
   position: relative;
   width: 100%;
@@ -133,7 +132,6 @@ main .banner2 {
   align-items: center;
   padding: 0;
 }
-
 main .banner2::before {
   position: absolute;
   bottom: 0;
@@ -141,7 +139,6 @@ main .banner2::before {
   width: 100%;
   height: 400px;
 }
-
 main .banner2::after {
   content: "";
   position: absolute;
@@ -151,69 +148,55 @@ main .banner2::after {
   height: 400px;
   background: linear-gradient(to bottom, #1F2544, transparent);
 }
-
 main .planetasCard {
   text-align: center;
 }
-
-main .planetasCard .content {
-  text-align: center;
+main .planetasCard .planetasCard-title {
+  font-size: 2.5rem;
+  margin: 10px;
 }
-
 main .planetasCard .planetasCard-list {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 20px;
 }
-
-main .planetasCard .planetasCard-list:hover .box {
+main .planetasCard:hover .box {
   opacity: 0.2;
 }
-
-main .planetasCard .planetasCard-list .box {
+main .planetasCard .box {
   position: relative;
   min-width: 350px;
   height: 480px;
-  background: #191919;
+  background: #474F7A;
   transition: 0.5s;
   margin: 10px;
   overflow: hidden;
   border-radius: 15px;
 }
-
-main .planetasCard .planetasCard-list .box:hover {
+main .planetasCard .box:hover {
   opacity: 1;
+  transform: scale(1.2);
 }
-
-main .planetasCard .planetasCard-list .box .imgBx {
+main .planetasCard .box .imgBx {
   position: relative;
   width: 100%;
   height: 400px;
 }
-
-main .planetasCard .planetasCard-list .box .content {
+main .planetasCard .box .content {
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-main .planetasCard .planetasCard-list .box .content h3 {
+main .planetasCard .box .content h3 {
   color: #fff;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.2em;
 }
-
-main .planetasCard .planetasCard-list .box .content h3 span {
-  font-size: 15px;
-  font-weight: 300;
-  opacity: 0.5;
-}
-
 main .banner3 {
   position: relative;
   width: 100%;
@@ -223,8 +206,7 @@ main .banner3 {
   align-items: center;
   padding: 0;
 }
-
-main .banner3::before {
+main .banner3 ::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -233,8 +215,7 @@ main .banner3::before {
   height: 400px;
   background: linear-gradient(to top, #111, transparent);
 }
-
-main .banner3:after {
+main .banner3::after {
   content: "";
   position: absolute;
   top: 0;
@@ -243,8 +224,7 @@ main .banner3:after {
   height: 400px;
   background: linear-gradient(to bottom, #111, transparent);
 }
-
-.info {
+main .info {
   position: relative;
   width: 100%;
   display: flex;
@@ -252,11 +232,9 @@ main .banner3:after {
   align-items: center;
   padding: 0;
 }
-
-.info .contentBx {
+main .info .contentBx {
   min-width: 50%;
   width: 50%;
-  text-align: end;
   padding-right: 10px;
 }
 
@@ -313,11 +291,14 @@ a.btn {
 }
 
 @media (max-width: 600px) {
+  main .banner .content {
+    max-width: 300px;
+  }
+  main .banner .content .titulo-gr {
+    font-size: 50px;
+  }
   section {
     padding: 40px;
-  }
-  .banner .content h2 {
-    font-size: 2.5em;
   }
   .banner .content p {
     font-size: 1em;
