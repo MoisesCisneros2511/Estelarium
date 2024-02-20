@@ -374,7 +374,30 @@ main .galeria-container .galeria-grid .galeria-photo .photos:hover, main .acerca
 }
 main .galeria-container .galeria-grid .galeria-photo .photo-description, main .acercade-container .galeria-grid .galeria-photo .photo-description {
   padding: 1rem;
-  background-color: #474F7A;
+}
+
+.photo-description-color1 {
+  background-color: #392467;
+}
+
+.photo-description-color2 {
+  background-color: #190482;
+}
+
+.photo-description-color3 {
+  background-color: #451952;
+}
+
+.photo-description-color4 {
+  background-color: #001C30;
+}
+
+.photo-description-color5 {
+  background-color: #443C68;
+}
+
+.photo-description-color6 {
+  background-color: #66347F;
 }
 
 @media (max-width: 850px) {

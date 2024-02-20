@@ -3,6 +3,8 @@
 //     display: block;
 // } codigo para que funcionw
 /* GALERIA v2 */
+
+
 main {
     .galeria-container {
         margin-top: 20px;
@@ -29,12 +31,27 @@ main {
                 }
                 .photo-description {
                     padding: 1rem;
-                    background-color: $color-galeriaFondo;
                 }
             }
         }
     }
 }
+
+$colors: (
+    color1: #392467,
+    color2: #190482,
+    color3: #451952,
+    color4: #001C30,
+    color5: #443C68,
+    color6: #66347F,
+);
+
+@each $key, $color in $colors {
+    .photo-description-#{$key} {
+        background-color: $color;
+    }
+}
+
 
 @media (max-width: 850px) {
     main {
