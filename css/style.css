@@ -484,6 +484,7 @@ img {
 }
 /* Acerca de */
 .acercade-container {
+  margin: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -511,6 +512,9 @@ img {
 }
 
 @media (max-width: 850px) {
+  .acercade-container section {
+    padding: 20px;
+  }
   .navbar .container-fluid .navbar-toggler {
     background-color: #474F7A;
   }

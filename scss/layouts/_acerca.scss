@@ -1,5 +1,6 @@
 /* Acerca de */
 .acercade-container {
+    margin: 20px;
     @extend .galeria-container;
     @include container-grid(2,1fr);
 
@@ -28,6 +29,11 @@
 }
 
 @media (max-width: 850px) {
+    .acercade-container {
+        section {
+            padding: 20px;
+        }
+    }
     .navbar {
         .container-fluid {
             .navbar-toggler {
