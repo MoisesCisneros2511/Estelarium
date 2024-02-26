@@ -7,6 +7,11 @@ a{
     text-decoration: none;
     color: white;
 }
+h1 {
+    color: $titulos-claros;
+    font-weight: bold;
+    margin: 10px;
+}
 h2, h3, h4 {
     color: $titulos-claros;
     margin: 5px;
