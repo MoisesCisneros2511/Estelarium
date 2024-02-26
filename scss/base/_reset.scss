@@ -8,16 +8,16 @@ a{
     color: white;
 }
 h2, h3, h4 {
-    color: #3498db;
+    color: $titulos-claros;
     margin: 5px;
 }
 
 p {
-    color: #ffffff;
+    color: $color-textoClaro;
 }
 
 body {
-    background: #81689D;
+    background: $color-fondo;
 }
 
 // Cuidado con este codigo

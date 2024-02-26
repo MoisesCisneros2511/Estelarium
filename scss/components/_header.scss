@@ -1,40 +1,24 @@
 
 /* Header */
 header{
-    display: flex;
-    background-color: rgba(3, 6, 55);
-    min-height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 5px solid #720455;
-}
-.logo{
-    display: flex;
-    align-items: center;
-}
-nav a{
-    font-weight: 600;
-    padding-right: 21px;
-}
-nav a:hover{
-    color: #A367B1;
+    border-radius: 15px;
+    border-bottom: 5px solid #720455;
+    font-size: 20px;
 }
 
 @media (max-width: 680px){
-    header{
-        flex-direction: column;
-    }
-    nav{
-        padding: 10px 0px;
-        text-align: center;
+    .container-fluid {
+        padding: 20px;
+        .navbar-brand {
+            font-size: 29px;
+        }    
     }
 }
 
 /* Header de bootstrap */
 .navbar-nav .nav-link {
-    color: #2779b5;
+    color: $titulos-claros;
 }
 .nav-link:hover {
-    color: #720455;
+    color: $titulos-claros;
 }
