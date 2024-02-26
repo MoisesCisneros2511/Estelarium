@@ -225,6 +225,31 @@ main .info .contentBx {
   width: 50%;
   padding-right: 10px;
 }
+main .info .contentBx .titleText {
+  font-weight: 600;
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+main .info .contentBx .text {
+  color: #fff;
+  font-size: 1em;
+}
+main .info .ImgBx {
+  position: relative;
+  min-height: 500px;
+  width: 50%;
+}
+main .info .ImgBx img {
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 
 a.btn {
   position: relative;
@@ -236,35 +261,6 @@ a.btn {
   padding: 10px 30px;
   border-radius: 10px;
   margin: 10px;
-}
-
-.titleText {
-  font-weight: 600;
-  color: #fff;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.text {
-  color: #fff;
-  font-size: 1em;
-}
-
-.ImgBx {
-  position: relative;
-  min-height: 500px;
-  width: 50%;
-}
-
-.ImgBx img {
-  border-radius: 15px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 .fitBg {
