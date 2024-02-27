@@ -2,6 +2,23 @@
 /* Pagina de inicio */
 
 main {
+    a.btn {
+        position: relative;
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 30px;
+        background: #fff;
+        color: #333;
+        text-decoration: none;
+        padding: 10px 30px;
+        border-radius: 10px;
+        margin: 10px;
+        &:hover {
+            background-color: $titulos-claros;
+        }
+    }
+
     .banner {
         position: relative;
         width: 100%;
@@ -148,6 +165,7 @@ main {
             min-width: 50%;
             width: 50%;
             padding-right: 10px;
+            padding: 30px;
             .titleText {
                 font-weight: 600;
                 color: #fff;
@@ -173,23 +191,12 @@ main {
                 -o-object-fit: cover;
                 object-fit: cover;
             }
-        }        
+        }   
     }
 }
 
 
 
-a.btn {
-    position: relative;
-    display: inline-block;
-    margin-top: 30px;
-    background: #fff;
-    color: #333;
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 10px;
-    margin: 10px;
-}
 .fitBg {
     position: absolute;
     top: 0;
@@ -208,30 +215,26 @@ a.btn {
                 max-width: 300px;
                 .titulo-gr {
                     font-size: 50px;
+                    p {
+                        font-size: 1em;
+                    }
                 }
             }
         }
-    }
-    section {
-    padding: 40px;
-    }
-    .banner .content p {
-    font-size: 1em;
-    }
-    .info {
-    flex-direction: column;
-    }
-    .info .contentBx {
-    min-width: 100%;
-    width: 100%;
-    text-align: center;
-    padding-right: 0px;
-    }
-    .info .ImgBx {
-    min-width: 100%;
-    width: 100%;
-    text-align: center;
-    padding-right: 0px;
+        .info {
+            flex-direction: column;
+            .contentBx {
+                min-width: 100%;
+                width: 100%;
+                text-align: center;
+            }
+            .ImgBx {
+                min-width: 100%;
+                width: 100%;
+                text-align: center;
+                padding-right: 0px;
+            }
+        }        
     }
     .ImgBx {
     min-height: 250px;
@@ -251,9 +254,5 @@ a.btn {
     }
     .planetasCard-list .box .imgBx {
     height: 320px;
-    }
-    .footer .sci li a img {
-    filter: invert(1);
-    max-width: 30px;
     }
 }

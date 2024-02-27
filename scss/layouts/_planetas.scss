@@ -5,29 +5,35 @@ img {
     width: 100%;
 }
 
-.planetas-container {
-    background-color: #070F2B;
-    display: grid;
-    @include container-grid(3,1fr);
-
-    .planetas-info {
-        align-items: center;
-        color: #EFECEC;
-        padding: 20px;
-        font-family: Roboto;
-        border: 1px solid #176B87;
-        box-shadow: 10px 10px 16px -1px rgba(23,107,135,0.75);
-        img {
-            border-radius: 25px;
-        }
-        h2 {
-            font-size: 2rem;
-            margin: 5px;
-        }
-        &:hover {
-            transition: 0.5s;
-            background-color: #1D2B53;
-            transform: scale(1.05);
+main {
+    .animacionTitulo {
+        text-align: center;
+        @include tituloAnimacion(#FF407D, #333A73);
+    }
+    .planetas-container {
+        background-color: #070F2B;
+        display: grid;
+        @include container-grid(3,1fr);
+    
+        .planetas-info {
+            align-items: center;
+            color: #EFECEC;
+            padding: 20px;
+            font-family: Roboto;
+            border: 1px solid #176B87;
+            box-shadow: 10px 10px 16px -1px rgba(23,107,135,0.75);
+            img {
+                border-radius: 25px;
+            }
+            h2 {
+                font-size: 2rem;
+                margin: 5px;
+            }
+            &:hover {
+                transition: 0.5s;
+                background-color: #1D2B53;
+                transform: scale(1.05);
+            }
         }
     }
 }
@@ -35,14 +41,18 @@ img {
 
 
 @media (max-width: 850px) {
-    .planetas-container {
-        @include container-grid(2,1fr);
+    main {
+        .planetas-container {
+            @include container-grid(2,1fr);
+        }    
     }
 }
 
 @media (max-width: 450px){
-    .planetas-container {
-        @include container-grid(1,1fr);
+    main {
+        .planetas-container {
+            @include container-grid(1,1fr);
+        }    
     }
 }
 

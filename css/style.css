@@ -55,7 +55,7 @@ header {
 }
 
 .nav-link:hover {
-  color: rgb(0, 180, 216);
+  color: rgb(29, 36, 202);
 }
 
 /* FOOTEER */
@@ -77,6 +77,22 @@ footer p {
   }
 }
 /* Pagina de inicio */
+main a.btn {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 30px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin: 10px;
+}
+main a.btn:hover {
+  background-color: rgb(0, 180, 216);
+}
 main .banner {
   position: relative;
   width: 100%;
@@ -224,6 +240,7 @@ main .info .contentBx {
   min-width: 50%;
   width: 50%;
   padding-right: 10px;
+  padding: 30px;
 }
 main .info .contentBx .titleText {
   font-weight: 600;
@@ -251,18 +268,6 @@ main .info .ImgBx img {
   object-fit: cover;
 }
 
-a.btn {
-  position: relative;
-  display: inline-block;
-  margin-top: 30px;
-  background: #fff;
-  color: #333;
-  text-decoration: none;
-  padding: 10px 30px;
-  border-radius: 10px;
-  margin: 10px;
-}
-
 .fitBg {
   position: absolute;
   top: 0;
@@ -281,22 +286,18 @@ a.btn {
   main .banner .content .titulo-gr {
     font-size: 50px;
   }
-  section {
-    padding: 40px;
-  }
-  .banner .content p {
+  main .banner .content .titulo-gr p {
     font-size: 1em;
   }
-  .info {
+  main .info {
     flex-direction: column;
   }
-  .info .contentBx {
+  main .info .contentBx {
     min-width: 100%;
     width: 100%;
     text-align: center;
-    padding-right: 0px;
   }
-  .info .ImgBx {
+  main .info .ImgBx {
     min-width: 100%;
     width: 100%;
     text-align: center;
@@ -320,10 +321,6 @@ a.btn {
   }
   .planetasCard-list .box .imgBx {
     height: 320px;
-  }
-  .footer .sci li a img {
-    filter: invert(1);
-    max-width: 30px;
   }
 }
 /* GALERIA v2 */
@@ -436,14 +433,28 @@ img {
   width: 100%;
 }
 
-.planetas-container {
+main .animacionTitulo {
+  text-align: center;
+  font-size: 3rem;
+  padding: 10px;
+  border-radius: 15px;
+  background: linear-gradient(123deg, #FF407D, #333A73);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s;
+}
+main .animacionTitulo:hover {
+  background-size: 100% 100%;
+}
+main .planetas-container {
   background-color: #070F2B;
   display: grid;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.planetas-container .planetas-info {
+main .planetas-container .planetas-info {
   align-items: center;
   color: #EFECEC;
   padding: 20px;
@@ -451,28 +462,28 @@ img {
   border: 1px solid #176B87;
   box-shadow: 10px 10px 16px -1px rgba(23, 107, 135, 0.75);
 }
-.planetas-container .planetas-info img {
+main .planetas-container .planetas-info img {
   border-radius: 25px;
 }
-.planetas-container .planetas-info h2 {
+main .planetas-container .planetas-info h2 {
   font-size: 2rem;
   margin: 5px;
 }
-.planetas-container .planetas-info:hover {
+main .planetas-container .planetas-info:hover {
   transition: 0.5s;
   background-color: #1D2B53;
   transform: scale(1.05);
 }
 
 @media (max-width: 850px) {
-  .planetas-container {
+  main .planetas-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 }
 @media (max-width: 450px) {
-  .planetas-container {
+  main .planetas-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
